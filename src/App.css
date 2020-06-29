@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Squada+One&display=swap');
+
+
+.App {
+  padding: 20px;
+  /* background-color: #451804; */
+  background-image: url('https://res.cloudinary.com/hannahbannan/image/upload/v1593207017/Mars%20Project/193855_planet-mars-wallpaper_qhuqhi.jpg');
+  /* background-size:cover; */
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  height: 80vh;
+  color: white;
+}
+
+header {
+  position: left;
+  text-align: left;
+  position: fixed;
+  padding-left: 20px;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  position: center;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  color: white;
+  /* background-color: rgba(0,0,0,0.2) */
+}
+
+.About {
+  padding: 0px 20px 20px 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 20px;
+  background-color: rgb(0,0,0);
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  color: darkred;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+/* Weather Report Page */
+
+
+.weather-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 5px;
+  position: center;
+  padding: 10px;
+}
+
+@media screen and (min-width:768px) {
+
+  .App {
+    height: 100vh;
+  }
+
+  .weather-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+  }
+}

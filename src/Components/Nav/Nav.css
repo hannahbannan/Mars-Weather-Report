@@ -1,0 +1,22 @@
+h2 {
+    font-family: 'Squada One', serif;
+}
+  
+.hamburger div {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 12px;
+    cursor: pointer;
+    margin-right: 20px;;
+}
+  
+a {
+    color: white;
+    font-family: "Maven Pro", sans-serif;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #F9AD57;
+}
