@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SEIR-526-MarsProject/static/css/main.14192618.chunk.css",
+    "main.js": "/SEIR-526-MarsProject/static/js/main.0593f1be.chunk.js",
+    "main.js.map": "/SEIR-526-MarsProject/static/js/main.0593f1be.chunk.js.map",
+    "runtime-main.js": "/SEIR-526-MarsProject/static/js/runtime-main.35c368b3.js",
+    "runtime-main.js.map": "/SEIR-526-MarsProject/static/js/runtime-main.35c368b3.js.map",
+    "static/js/2.7a9d51de.chunk.js": "/SEIR-526-MarsProject/static/js/2.7a9d51de.chunk.js",
+    "static/js/2.7a9d51de.chunk.js.map": "/SEIR-526-MarsProject/static/js/2.7a9d51de.chunk.js.map",
+    "index.html": "/SEIR-526-MarsProject/index.html",
+    "precache-manifest.426fd2ccf74f03c1235275dcba0df046.js": "/SEIR-526-MarsProject/precache-manifest.426fd2ccf74f03c1235275dcba0df046.js",
+    "service-worker.js": "/SEIR-526-MarsProject/service-worker.js",
+    "static/css/main.14192618.chunk.css.map": "/SEIR-526-MarsProject/static/css/main.14192618.chunk.css.map",
+    "static/js/2.7a9d51de.chunk.js.LICENSE.txt": "/SEIR-526-MarsProject/static/js/2.7a9d51de.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35c368b3.js",
+    "static/js/2.7a9d51de.chunk.js",
+    "static/css/main.14192618.chunk.css",
+    "static/js/main.0593f1be.chunk.js"
+  ]
+}
