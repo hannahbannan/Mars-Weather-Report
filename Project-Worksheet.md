@@ -62,15 +62,15 @@ React Architecture: https://res.cloudinary.com/hannahbannan/image/upload/v159312
 | Build nav section | H | 1 | 1 | 1 |
 | Implement React Router | H | 2 | 1 | 1 |
 | Build weather details component by pulling API data | H | 3 | 2 | 2 |
-| About page research & writing copy | M | 2 | 1 |  |
-| Seasons page research & writing copy | M | 2 | 1 |  |
+| About page research & writing copy | M | 2 | 2 | 2 |
+| Seasons page research & writing copy | M | 2 | 1 | 1 |
 | Seasons page API pull and conditional rendering | M | 2 | 3 | 3 |
-| Responsive design | H | 3 | 3 |  |
+| Responsive design | H | 3 | 4 | 4 |
 | useContext for API data | M | 2 | 2 | 2 |
-| Styling in CSS | M | 3 | 2 |  |
-| Source images | M | 2 | 1 |  |
-| Hamburger icon on mobile | L | 2 | 2 |  |
-| Total |  | 32hrs | 23hrs |  |
+| Styling in CSS | M | 3 | 4 | 4 |
+| Source images | M | 2 | 1 | 1 |
+| Hamburger icon on mobile | L | 2 | 3 | 3 |
+| Total |  | 32hrs | 28hrs |  |
 
 
 ## Post-MVP
@@ -80,7 +80,7 @@ React Architecture: https://res.cloudinary.com/hannahbannan/image/upload/v159312
 | Form for zipcode input | L | 3 |  |  |
 | Compare first and second API data | L | 2 |  |  |
 | Learn D3/make data graphic | L | 5 |  |  |
-| Mars image carousel on about page | L | 3 |  |  |
+| Celsius to Fahrenheit toggle | M | 3 |  |  |
 | Total |  | 15hrs|  |  |
 
 ## Additional Libraries
