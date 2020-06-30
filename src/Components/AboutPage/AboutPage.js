@@ -19,7 +19,7 @@ const AboutPage = () => {
                 <br />
             </div>
             <p>Mars is considered the most promising planet for humans to inhabit in the future, because its atmosphere and climate are the most similar to Earth's. Technically, if humans were able to heat up the planet slightly and create a thicker atmosphere, it would put us on track to be able to <strong>live and breathe</strong> on Mars one day. But this takes a of work, money, and time, and resources we haven't invented yet!</p>
-            <p><a href="https://www.nasa.gov/press-release/goddard/2018/mars-terraforming" target="_blank">Click here</a>to learn more about <strong>terraforming</strong> - the theory behind a possible future inhabitation of Mars.</p>
+            <p><a href="https://www.nasa.gov/press-release/goddard/2018/mars-terraforming" target="_blank" rel="noreferrer">Click here</a>to learn more about <strong>terraforming</strong> - the theory behind a possible future inhabitation of Mars.</p>
             <img src="https://res.cloudinary.com/hannahbannan/image/upload/v1593547200/Mars%20Project/2020_rover_zitx9p.jpg" className="rover" alt="2020 Mars Rover"/>
         </div>
     </div>)
