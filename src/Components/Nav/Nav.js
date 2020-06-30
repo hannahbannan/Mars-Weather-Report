@@ -1,14 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from 'react-router-dom';
 import Hamburger from "../Hamburger/Hamburger"
 import "./Nav.css"
 
 
-const Nav = ({handleClick, isOpen}) => {
+const Nav = () => {
+
+    const [open, isOpen] = useState(false);
+    const handleClick = () => {
+        isOpen(!open);
+        console.log(open)
+      }
+
     return (
         <div className="nav">
-            {!isOpen ? 
+            {open ? 
             <> 
+            <Hamburger className="hamburger" handleClick={handleClick} /> 
             <Link to='/report'>
             <h4>WEATHER REPORT</h4>
             </Link>

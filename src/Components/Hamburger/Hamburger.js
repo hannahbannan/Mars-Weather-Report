@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hamburger.css";
 
+
 const Hamburger = ({handleClick}) => {
     return (
     <div className='hamburger toggle' onClick={handleClick}>

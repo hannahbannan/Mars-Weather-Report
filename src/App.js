@@ -12,7 +12,7 @@ export const DataContext = createContext();
 function App() {
 
   const [weatherData, setWeatherData] = useState(null);
-  const [open, isOpen] = useState(false);
+  
 
   useEffect(() => {
     const nasaUrl ='https://api.nasa.gov/insight_weather/?api_key=NVPo1OZ86ApquiqVgY9DX61fYLbMSAO1vfNbNDwP&feedtype=json&ver=1.0';
@@ -26,10 +26,7 @@ function App() {
 
   // console.log(weatherData)
     
-  const handleClick = () => {
-    isOpen(!open);
-    console.log(open)
-  }
+  
 
   
 
@@ -37,9 +34,9 @@ function App() {
     <div className="App">
       <header>
       <Link to='/report'>
-        <h2>MARS WEATHER REPORT</h2>
+        <h2 className="title">MARS WEATHER REPORT</h2>
       </Link>
-        <Nav handleClick={handleClick} isOpen={isOpen}/>
+        <Nav />
       </header>
       <main>
           <DataContext.Provider value={weatherData}>

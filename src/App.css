@@ -26,6 +26,10 @@ header {
   align-items: center;
 }
 
+.title {
+  font-size: 1.7rem;
+}
+
 main {
   position: center;
   text-align: center;
@@ -73,6 +77,10 @@ footer p {
 
   .App {
     height: 100vh;
+  }
+
+  .title {
+    font-size: 2rem;
   }
 
   .weather-container {
