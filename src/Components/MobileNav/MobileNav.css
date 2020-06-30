@@ -1,0 +1,18 @@
+.mobile-nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 10px;
+    right: 20px;
+    justify-content: space-around;
+    text-align: right;
+    line-height: 0.5;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.mobile-nav h4 {
+    line-height: 0;
+    font-size: 1.2rem;
+}

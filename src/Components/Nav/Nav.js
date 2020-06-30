@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import {Link} from 'react-router-dom';
-import Hamburger from "../Hamburger/Hamburger";
 import "./Nav.css";
-import Exit from "../Exit/Exit";
 import Media from 'react-media';
+import MobileNav from "../MobileNav/MobileNav"
 
 const Nav = () => {
 
@@ -29,7 +28,7 @@ const Nav = () => {
                 <h4>ABOUT</h4>
               </Link> </>
               :
-              "hamburger goes here"
+              <MobileNav handleClick={handleClick} open={open}/>
            }}
         </Media>
       </div>

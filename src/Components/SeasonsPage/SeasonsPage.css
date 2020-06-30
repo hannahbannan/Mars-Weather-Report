@@ -2,3 +2,17 @@
     width: 70vw;
     margin: 0 auto;
 }
+
+.season h2 {
+    font-size: 2rem;
+}
+
+.season p {
+    font-family: "Maven Pro", sans-serif;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 1.4rem;
+}
+
+
+
+

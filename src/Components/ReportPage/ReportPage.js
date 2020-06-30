@@ -19,7 +19,6 @@ const ReportPage = () => {
                     {display.map((day, index) => (
                         <WeatherDetails day={day} key={index} index={index} />
                 ))}
-             
                 </div>
             </div>  
     )}
