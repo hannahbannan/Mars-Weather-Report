@@ -9,13 +9,13 @@ const MobileNav = ({handleClick, open}) => {
  return open ?  
     <div className="mobile-nav"> 
       <Exit handleClick={handleClick}/>
-      <Link to='/report'>
+      <Link to='/report' onClick={handleClick}>
         <h4>WEATHER REPORT</h4>
       </Link>
-      <Link to='/season'>
+      <Link to='/season' onClick={handleClick}>
         <h4>MARS SEASONS</h4>
       </Link>
-      <Link to='/about'>
+      <Link to='/about' onClick={handleClick}>
         <h4>ABOUT</h4>
       </Link> 
    </div> 

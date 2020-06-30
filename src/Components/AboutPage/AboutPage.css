@@ -1,9 +1,10 @@
 .About {
-    width: 95vw;
+    width: 80vw;
     height: 100vh;
     margin: 0 auto;
     background-color: black;
     padding-bottom: 100px;
+    
 }
 
 .About h2 {
@@ -16,23 +17,23 @@
 }
 
 .text-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .insight {
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
 }
 
 .rover {
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
     margin-bottom: 100px;
 }
 
 .dust {
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -43,6 +44,9 @@
 
 @media screen and (min-width: 768px) {
     
+    .text-container {
+        width: 80%;
+    }
 
     .About p {
         font-size: 1.4rem;
