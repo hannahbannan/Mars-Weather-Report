@@ -1,3 +1,25 @@
 .report-page {
     padding-bottom: 50px;
+    padding: 10px;
 }
+
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
+    position: center;
+    padding: 10px;
+  }
+
+
+
+  @media only screen and (min-width: 768px) {
+
+    .weather-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+  }
