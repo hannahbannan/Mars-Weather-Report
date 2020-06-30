@@ -26,13 +26,13 @@ const WeatherDetails = ({day, index}) => {
     return (
         <div className={index}>
             <h4> {shortDate} </h4>
-            <h2>{shortTemp} °C</h2>
+            <h2 className="degree">{shortTemp} °C</h2>
             <h4>High: {shortHigh} °C</h4>
             <h4>Low: {shortLow} °C</h4>
-            { index===0 ?
+            {/* { index===0 ?
             <>
             <p>Wind Speed: {day.HWS.av} m/s</p>
-            <p>Atmospheric Pressure: {day.PRE.av} Pa</p></> : null}
+            <p>Atmospheric Pressure: {day.PRE.av} Pa</p></> : null} */}
         </div>
     )
 }

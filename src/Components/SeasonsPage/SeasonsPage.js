@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { DataContext } from "../../App"
+import "./SeasonsPage.css"
 
 const SeasonsPage = ({ weatherData }) => {
     const weatherDisplay = useContext(DataContext);

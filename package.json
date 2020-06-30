@@ -10,9 +10,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hamburger-menu": "^1.2.1",
+    "react-media": "^2.0.0-rc.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "predeploy": "npm run build",
