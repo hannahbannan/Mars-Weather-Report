@@ -24,12 +24,6 @@ function App() {
     makeApiCall();
   }, []);
 
-  // console.log(weatherData)
-    
-  
-
-  
-
   return (
     <div className="App">
       <header>

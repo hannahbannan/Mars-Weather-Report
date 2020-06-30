@@ -32,14 +32,14 @@
 }
 
 .dust {
-    width: 50%;
+    width: 80%;
     border-radius: 20px;
 }
 
-.crater {
-    width: 50%;
-    border-radius: 20px;
+.About a {
+    color: #F9AD57;
 }
+
 
 @media screen and (min-width: 768px) {
     
