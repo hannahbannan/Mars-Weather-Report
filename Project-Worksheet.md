@@ -2,8 +2,8 @@
 
 ## Project Links
 
-Github Repo: https://github.com/hannahbannan/SEIR-526-Mars-Project
-- [add your deployment link]()
+Github Repo: https://github.com/hannahbannan/Mars-Weather-Report
+Deployment Link: https://eloquent-kepler-c32358.netlify.app/
 
 ## Project Description
 
