@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import WeatherDetails from "../WeatherDetails/WeatherDetails"
+import WeatherComp from "../WeatherComp/WeatherComp"
 import { DataContext } from "../../App"
 import "./ReportPage.css"
 
@@ -7,7 +8,7 @@ import "./ReportPage.css"
 
 const ReportPage = () => {
 
-    const [celsius, setCelsius] = useState(false);
+    const [celsius, setCelsius] = useState(true);
 
     const handleToggle = (e) => {
         setCelsius(!celsius)
@@ -32,6 +33,7 @@ const ReportPage = () => {
                         <WeatherDetails day={day} key={index} index={index} handleToggle={handleToggle} celsius={celsius}/>
                 ))}
                 </div>
+                <WeatherComp handleToggle={handleToggle} celsius={celsius}/>
             </div>  
     )}
    

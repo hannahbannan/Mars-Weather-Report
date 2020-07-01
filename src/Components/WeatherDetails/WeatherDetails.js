@@ -24,7 +24,7 @@ const WeatherDetails = ({day, index, handleToggle, celsius}) => {
     return (
         <div className={index}>
             <h4> {shortDate} </h4>
-            { !celsius ?   
+            { celsius ?   
             <>          
             <h2 className="degree">{shortTemp} °C</h2> 
             <h4>High: {shortHigh} °C</h4>
