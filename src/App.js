@@ -7,12 +7,10 @@ import AboutPage from "./Components/AboutPage/AboutPage";
 import Nav from "./Components/Nav/Nav"
 
 export const DataContext = createContext();
-// console.log('DataContext up and running');
 
 function App() {
 
   const [weatherData, setWeatherData] = useState(null);
-  
 
   useEffect(() => {
     const nasaUrl ='https://api.nasa.gov/insight_weather/?api_key=NVPo1OZ86ApquiqVgY9DX61fYLbMSAO1vfNbNDwP&feedtype=json&ver=1.0';
@@ -33,20 +31,20 @@ function App() {
         <Nav />
       </header>
       <main>
-          <DataContext.Provider value={weatherData}>
+        <DataContext.Provider value={weatherData}>
           <Route path="/report">
             <ReportPage />
           </Route>
           <Route exact path="/season">
             <SeasonsPage weatherData={weatherData}/>
           </Route>
-          </DataContext.Provider>
+        </DataContext.Provider>
         <Route exact path="/about" component={AboutPage}/>
         <Redirect to="/report" />
-        </main>
-        <footer>
-          <p>Mars Weather Report created by Hannah Bannan</p>
-        </footer>
+      </main>
+      <footer>
+        <p>Mars Weather Report created by Hannah Bannan</p>
+      </footer>
     </div>
   );
 }

@@ -1,24 +1,35 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import WeatherDetails from "../WeatherDetails/WeatherDetails"
 import { DataContext } from "../../App"
 import "./ReportPage.css"
 
+
+
 const ReportPage = () => {
- const weatherDisplay = useContext(DataContext);
+
+    const [celsius, setCelsius] = useState(false);
+
+    const handleToggle = (e) => {
+        setCelsius(!celsius)
+        console.log(celsius)
+    }
+
+    const weatherDisplay = useContext(DataContext);
 
     if (!weatherDisplay) {
         return <h2>Loading...</h2>
     } else {
-        // console.log(weatherDisplay)
         const display = Object.values(weatherDisplay).splice(0,7).reverse();
-        // console.log(display)
-        
      
         return (
             <div className="report-page">  
                 <div className="weather-container">
+                    <label className="switch">
+                        <input type="checkbox"/>
+                        <span className="slider round" onClick={handleToggle}></span>
+                    </label>
                     {display.map((day, index) => (
-                        <WeatherDetails day={day} key={index} index={index} />
+                        <WeatherDetails day={day} key={index} index={index} handleToggle={handleToggle} celsius={celsius}/>
                 ))}
                 </div>
             </div>  
