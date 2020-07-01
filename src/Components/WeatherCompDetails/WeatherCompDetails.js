@@ -18,14 +18,16 @@ const WeatherCompDetails = ({localWeather}) => {
             return (<h3>Today it is <span className="em">{(localWeath-marsWeather)} degrees</span>  colder on Mars than it is in {localCity} <span className="em">({localWeath}°F)</span>.</h3>)
         } else if (marsWeather>localWeath) {
             return (<h3>Today it is <span className="em">{(marsWeather-localWeath)} degrees</span>  warmer on Mars than it is in {localCity} <span className="em">({localWeath}°F)</span>.</h3>)
-        } else {
+        } else if (marsWeather===localWeath) {
             return (<h3>Mars and {localCity} are the same temperature today!</h3>)
-        } 
+        } else {
+            return (<p>Nothing to see here...</p>)
+        }
     }
 
     return (
         <div className="comp">
-            {compWeather()}
+            {localWeather.main.temp ? compWeather() : null}
         </div>
 
     )
