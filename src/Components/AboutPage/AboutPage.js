@@ -17,7 +17,7 @@ const AboutPage = () => {
 
                 <p className="pressure"><strong>Atmospheric pressure</strong> is measured in Pascals using an air pressure sensor. Atmospheric pressure on Mars is less than on Earth, making its atmosphere much “thinner”. For comparison, the average atmospheric pressure on Earth at sea level is around 101,325 Pascals. Mars’ atmospheric pressure averages about <strong>1%</strong> of the Earth’s pressure. </p>
 
-                <p className="wind">The <strong>wind speed</strong> on Mars varies. Mars frequently experiences windstorms that sweep up the red dust all over its surface.</p>
+                <p className="wind">The <strong>wind speed</strong> on Mars varies. Mars frequently experiences windstorms that sweep up red dust all over its surface.</p>
 
                 <br />
                 <img src="https://res.cloudinary.com/hannahbannan/image/upload/v1593547531/Mars%20Project/marsdust2_w5y2lx.jpg" className="dust" alt="dust storm"/>
