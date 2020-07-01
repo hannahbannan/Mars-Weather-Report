@@ -3,8 +3,6 @@ import "./WeatherDetails.css"
 
 
 const WeatherDetails = ({day, index, handleToggle, celsius}) => {
-    // console.log(handleToggle)
-   
 
     let myDate = new Date(day.First_UTC);
     myDate = myDate.toString();
@@ -37,10 +35,6 @@ const WeatherDetails = ({day, index, handleToggle, celsius}) => {
             <h4>Low: {fahrenheitLow} °F</h4>
             </>
             }
-            {/* { index===0 ?
-            <>
-            <p>Wind Speed: {day.HWS.av} m/s</p>
-            <p>Atmospheric Pressure: {day.PRE.av} Pa</p></> : null} */}
         </div>
     )
 }

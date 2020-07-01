@@ -12,7 +12,6 @@ const ReportPage = () => {
 
     const handleToggle = (e) => {
         setCelsius(!celsius)
-        console.log(celsius)
     }
 
     const weatherDisplay = useContext(DataContext);
