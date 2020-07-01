@@ -21,7 +21,7 @@ const WeatherComp = () => {
 
     return (
         <div>
-            {localWeather.main.temp ? <WeatherCompDetails weather={weatherDisplay} localWeather={localWeather}/> : null}
+            {localWeather.main ? <WeatherCompDetails weather={weatherDisplay} localWeather={localWeather}/> : null}
             <ZipSearch handleSubmit={handleSubmit}/>
         </div>
     )
