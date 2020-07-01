@@ -63,25 +63,26 @@ React Architecture: https://res.cloudinary.com/hannahbannan/image/upload/v159312
 | Implement React Router | H | 2 | 1 | 1 |
 | Build weather details component by pulling API data | H | 3 | 2 | 2 |
 | About page research & writing copy | M | 2 | 2 | 2 |
-| Seasons page research & writing copy | M | 2 | 1 | 1 |
+| Seasons page research & writing copy | M | 2 | 2 | 2 |
 | Seasons page API pull and conditional rendering | M | 2 | 3 | 3 |
 | Responsive design | H | 3 | 4 | 4 |
 | useContext for API data | M | 2 | 2 | 2 |
 | Styling in CSS | M | 3 | 4 | 4 |
 | Source images | M | 2 | 1 | 1 |
 | Hamburger icon on mobile | L | 2 | 3 | 3 |
-| Total |  | 32hrs | 28hrs |  |
+| Deploy on Netlify | H | 2 | 3 | 3 |
+| Total |  | 34hrs | 32hrs | 32hrs |
 
 
 ## Post-MVP
 | Component | Priority | Estimated Time (Hours) | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Fetch data from second API | L | 2 |  |  |
-| Form for zipcode input | L | 3 |  |  |
-| Compare first and second API data | L | 2 |  |  |
-| Learn D3/make data graphic | L | 5 |  |  |
-| Celsius to Fahrenheit toggle | M | 3 |  |  |
-| Total |  | 15hrs|  |  |
+| Fetch data from second API | L | 2 | 1 | 1 |
+| Form for zipcode input | L | 3 | 1 | 1 |
+| Compare first and second API data | L | 2 | 2 | 1 |
+| Learn D3/make data graphic | L | 5 | 0 | 0 |
+| Celsius to Fahrenheit toggle | M | 3 | 2 |  2|
+| Total |  | 15hrs| 5hrs | 6hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
