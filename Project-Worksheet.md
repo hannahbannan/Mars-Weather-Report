@@ -3,6 +3,7 @@
 ## Project Links
 
 Github Repo: https://github.com/hannahbannan/Mars-Weather-Report
+
 Deployment Link: https://eloquent-kepler-c32358.netlify.app/
 
 ## Project Description
@@ -91,7 +92,7 @@ React Architecture: https://res.cloudinary.com/hannahbannan/image/upload/v159312
 | Total |  | 15hrs| 5hrs | 6hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+I installed a supporting React library called React Media. I used it to create a media query inside my js file.
 
 ## Code Snippet
 
