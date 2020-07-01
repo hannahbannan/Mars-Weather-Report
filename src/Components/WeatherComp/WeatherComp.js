@@ -6,7 +6,6 @@ import WeatherCompDetails from "../WeatherCompDetails/WeatherCompDetails"
 const WeatherComp = () => {
 
     const weatherDisplay = useContext(DataContext);
-    // console.log(weatherDisplay);
 
     const [localWeather, setLocalWeather] = useState({
         main: {},
@@ -16,11 +15,9 @@ const WeatherComp = () => {
       const handleSubmit = async zipCode => {
         let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&units=imperial&appid=9a7d32021e291767e04cd8f0d17d7840`;
         const res = await fetch(weatherUrl)
-        // console.log(weatherUrl);
         const newData = await res.json();
         setLocalWeather(newData)
       }
-    //   console.log(localWeather)
 
     return (
         <div>

@@ -4,7 +4,6 @@ import "./ZipSearch.css"
 const ZipSearch = (props) => {
     const [zipCode, setZipCode] = useState("");
     const handleSubmit = e => {
-        // console.log('handleSubmit clicked');
         e.preventDefault();
         props.handleSubmit(zipCode);
         setZipCode("");
