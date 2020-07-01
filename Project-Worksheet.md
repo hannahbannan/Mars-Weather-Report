@@ -31,6 +31,11 @@ Here is a snippet of the API - atmospheric temperature (AT) on Sol 554. Shows av
 }
 
 
+I also used a second weather API from Open Weather App, to compare Mars' temperature with the temperature in your local zipcode.
+
+API URL: https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&units=imperial&appid=9a7d32021e291767e04cd8f0d17d7840
+
+
 ## Wireframes
 
 Check out my Sketch files in this repo if you are able to open. Otherwise, screenshots of my wireframe and React architecture can be found below.
@@ -49,6 +54,7 @@ React Architecture: https://res.cloudinary.com/hannahbannan/image/upload/v159312
 #### PostMVP 
 
 - Fetch data from a second weather API to compare your local weather to the Mars weather. Example: "It is 88 degrees colder in Mars today than it is in Los Angeles."
+- Toggle temperatures bewteen Celsius and Fahrenheit.
 
 ### Time Frames
 
@@ -89,10 +95,20 @@ React Architecture: https://res.cloudinary.com/hannahbannan/image/upload/v159312
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+I had fun rendering this deceptively simple statement, saying if the Mars weather was warmer or colder than the local weather. Had to think through some stuff here - and I finally remember how to convert Celsius into Fahrenheit!
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+let marsWeather = Math.round((weatherDisplay[0].AT.av)*1.8+32)
+let localCity= localWeather.name;
+let localWeath = Math.round(localWeather.main.temp);
+
+let compWeather = () => {
+   if (marsWeather < localWeath) {
+        return (<h3>Today it is {(localWeath-marsWeather)} degrees colder on Mars than it is in {localCity} ({localWeath}°F).</h3>)
+   } else if (marsWeather>localWeath) {
+        return (<h3>Today it is {(marsWeather-localWeath)} degrees warmer on Mars than it is in {localCity}.</h3>)
+   } else {
+        return (<h3>Mars and {localCity} are the same temperature today!</h3>)
+   } 
 }
 ```
