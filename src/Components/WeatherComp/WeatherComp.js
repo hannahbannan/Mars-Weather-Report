@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { DataContext } from "../../App"
+import "./WeatherComp.css"
 import ZipSearch from "../ZipSearch/ZipSearch"
 import WeatherCompDetails from "../WeatherCompDetails/WeatherCompDetails"
 
@@ -18,10 +19,11 @@ const WeatherComp = () => {
         const newData = await res.json();
         setLocalWeather(newData)
       }
-
+      console.log(localWeather.main)
     return (
-        <div>
-            {localWeather.main ? <WeatherCompDetails weather={weatherDisplay} localWeather={localWeather}/> : null}
+        <div className="comp">
+            <p>Enter your zipcode below to see how your local weather compares to the weather on Mars.</p>
+            {localWeather.main ? <WeatherCompDetails weather={weatherDisplay} localWeather={localWeather}/> : null} 
             <ZipSearch handleSubmit={handleSubmit}/>
         </div>
     )
