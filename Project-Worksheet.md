@@ -4,7 +4,7 @@
 
 Github Repo: https://github.com/hannahbannan/Mars-Weather-Report
 
-Deployment Link: https://eloquent-kepler-c32358.netlify.app/
+Deployment Link: https://mars-weather-report.netlify.app
 
 ## Project Description
 
