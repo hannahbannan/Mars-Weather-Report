@@ -5,9 +5,14 @@ import "./WeatherCompDetails.css"
 const WeatherCompDetails = ({localWeather}) => {
 
     let weatherDisplay = useContext(DataContext);
-    weatherDisplay =  Object.values(weatherDisplay).splice(0,7).reverse();
+    if (!weatherDisplay) {
+        return (<p>Loading....</p>)
+    } else {
     
-    let marsWeather = Math.round((weatherDisplay[0].AT.av)*1.8+32)
+       
+    weatherDisplay =  Object.values(weatherDisplay).splice(0,5).reverse();
+    
+    let marsWeather = Math.round((weatherDisplay[2].AT.av)*1.8+32)
 
     let localCity= localWeather.name;
 
@@ -30,7 +35,7 @@ const WeatherCompDetails = ({localWeather}) => {
             {localWeather.main.temp ? compWeather() : null}
         </div>
 
-    )
+    )}
 }
 
 export default WeatherCompDetails;

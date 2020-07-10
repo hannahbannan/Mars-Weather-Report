@@ -19,7 +19,6 @@ const WeatherComp = () => {
         const newData = await res.json();
         setLocalWeather(newData)
       }
-      console.log(localWeather.main)
     return (
         <div className="comp">
             <p>Enter your zipcode below to see how your local weather compares to the weather on Mars.</p>

@@ -19,7 +19,7 @@ const ReportPage = () => {
     if (!weatherDisplay) {
         return <h2>Loading...</h2>
     } else {
-        const display = Object.values(weatherDisplay).splice(0,7).reverse();
+        const display = Object.values(weatherDisplay).splice(0,5).reverse();
      
         return (
             <div className="report-page">  
