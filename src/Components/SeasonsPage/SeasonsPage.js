@@ -5,7 +5,7 @@ import "./SeasonsPage.css"
 const SeasonsPage = ({ weatherData }) => {
     const weatherDisplay = useContext(DataContext);
     if (weatherDisplay) {
-        let currentDay = weatherDisplay.sol_keys[6];
+        let currentDay = weatherDisplay.sol_keys[3];
         let seasonName = weatherDisplay[currentDay].Season.toUpperCase();
     return (
     <div className="season">
