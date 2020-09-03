@@ -5,8 +5,8 @@ import "./WeatherCompDetails.css"
 const WeatherCompDetails = ({localWeather}) => {
 
     let weatherDisplay = useContext(DataContext);
-    if (!weatherDisplay) {
-        return (<p>Loading....</p>)
+    if (!weatherDisplay[1]) {
+        return (<p>Nope.</p>)
     } else {
     
        
