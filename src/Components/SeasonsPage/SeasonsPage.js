@@ -10,7 +10,7 @@ const SeasonsPage = ({ weatherData }) => {
   } else if (!weatherDisplay.sol_keys[0]) {
     return (
       <div className="no-transmit">
-        <h3>The Mars Insight Lander is currently down. </h3>
+        <h3>The Mars InSight Lander is currently down. </h3>
         <h4 className="check-back">Check back tomorrow for a seasons report!</h4>
       </div>
     );

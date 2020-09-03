@@ -19,7 +19,7 @@ const ReportPage = () => {
     return (
       <div className="no-transmit">
         <h3>
-          Looks like the Mars Insight Lander is having some difficulty
+          Looks like the Mars InSight Lander is having some difficulty
           transmitting down to Earth.
         </h3>
         <h4 className="check-back">
